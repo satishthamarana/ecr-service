@@ -52,7 +52,7 @@ pipeline {
             ecr_repo = '955473949192.dkr.ecr.us-east-2.amazonaws.com/dms/dmsservice'
             docker_image_tag = ecr_repo + ':' + full_version
             println("docker_image_tag: ${docker_image_tag}")
-          sh("/usr/bin/docker build ${env.WORKSPACE}/application -t ${docker_image_tag}")
+          sh("docker build ${env.WORKSPACE}/application -t ${docker_image_tag}")
         }
       }
     }

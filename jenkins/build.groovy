@@ -70,7 +70,7 @@ pipeline {
       steps {
         script {
             if (params.build_only == false) {
-            build job: '../Deploy/' + env.JOB_BASE_NAME, parameters: [
+            build job: '../deploy/' + env.JOB_BASE_NAME, parameters: [
                     string(name: 'version', value: full_version),
                     string(name: 'environment', value: deploy_target),
                     string(name: 'region', value: region),

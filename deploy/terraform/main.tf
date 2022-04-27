@@ -19,7 +19,7 @@ resource "aws_ecs_task_definition" "ecs_task" {
          "logDriver": "awslogs",
          "options": {
             "awslogs-group": "/ecs/dms/dmsservice/${var.environment}",
-            "awslogs-region": "ap-south-1",
+            "awslogs-region": "us-east-2",
             "awslogs-stream-prefix": "ecs"
          }
       },

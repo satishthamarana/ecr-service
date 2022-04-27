@@ -14,7 +14,7 @@ pipeline {
   parameters {
     string (name: 'version', description: 'Artifact Version')
     choice (name: 'environment', choices: ["dev", "uat", "prod"], description: 'Deployment Environment')
-    choice (name: 'region', choices: ['ap-south-1'], description: 'AWS Region')
+    choice (name: 'region', choices: ['us-east-2'], description: 'AWS Region')
   }
 
   stages {

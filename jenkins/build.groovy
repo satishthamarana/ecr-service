@@ -67,7 +67,7 @@ pipeline {
           sh("docker rmi -f ${docker_image_tag}")
           }
         }
-    }
+    //}
     // stage('Deploy') {
     //   steps {
     //     script {

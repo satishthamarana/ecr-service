@@ -82,7 +82,7 @@ pipeline {
   }
   post {
     always {
-     // addShortText(full_version)
+     addShortText(full_version)
       cleanWs()
     }
   }

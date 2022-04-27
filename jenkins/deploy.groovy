@@ -60,8 +60,8 @@ pipeline {
   }
   post {
      always{
-	addShortText(params.version)
-	addShortText(params.environment)
+	//addShortText(params.version)
+	//addShortText(params.environment)
 	cleanWs()
      }
   }
